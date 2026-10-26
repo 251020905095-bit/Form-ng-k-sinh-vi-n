@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f7;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 650px;
+    padding: 40px 30px 30px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.form-badge {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: #ff4757;
+    color: #ffffff;
+    padding: 5px 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.form-container h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #333333;
+    font-size: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444444;
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #f9fbfc;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff;
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 25px;
+    margin-top: 8px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-weight: normal;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 10px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-reset {
+    background-color: #e4e7eb;
+    color: #4b6584;
+}
+
+.btn-reset:hover {
+    background-color: #d1d8e0;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
