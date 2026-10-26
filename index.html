@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Đăng Ký Sinh Viên</title>
+    <link rel="stylesheet" href="style_dksv.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-badge">ĐĂNG KÝ MỚI</div>
+
+        <h2>Đăng Ký Thông Tin Sinh Viên</h2>
+
+        <form action="#" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullname">Họ và tên</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên..." required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Nhập email..." required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Giới tính:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male" checked> Nam</label>
+                    <label><input type="radio" name="gender" value="female">Nữ</label>
+                    <label><input type="radio" name="gender" value="other">Khác</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Sở thích:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="hobby" value="reading">Đọc sách</label>
+                    <label><input type="checkbox" name="hobby" value="sports">Thể thao</label>
+                    <label><input type="checkbox" name="hobby" value="music">Âm nhạc</label>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="reset" class="btn btn-reset">Nhập lại</button>
+                <button type="submit" class="btn btn-submit">Đăng ký</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
